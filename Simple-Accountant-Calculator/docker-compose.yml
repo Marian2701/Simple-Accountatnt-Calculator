@@ -1,0 +1,20 @@
+version: '3.0'
+services:
+  pgsql:
+    image: maryanmak/postgre-accountant-calculator
+    restart: always
+    ports:
+      - 54328:5432
+    environment:
+      POSTGRES_PASSWORD: 12345
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    container_name: psql_ds
+
+  app:
+    image: maryanmak/python-flask-simple-accountant-calculator
+    ports:
+      - 5001:5001
+    depends_on:
+      - pgsql
+    container_name: app_ds
