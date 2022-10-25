@@ -6,7 +6,7 @@
 1) Mac OS: https://docs.docker.com/desktop/install/mac-install/
 2) Ubuntu : https://docs.docker.com/engine/install/ubuntu/
 
-После установки Docker, вам потребуется docker-compose, рекомендации по его установки вы найдете здесь:https://docker-docs.netlify.app/compose/install/
+После установки Docker, вам потребуется docker-compose, рекомендации по его установки вы найдете здесь: https://docker-docs.netlify.app/compose/install/
 
 Необходимые действия по подготовке вашего компьютера выполнены.
 
